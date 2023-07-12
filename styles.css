@@ -1,0 +1,67 @@
+
+
+
+
+h1 {
+margin: 10px 0px 0px 400px;
+color: black;
+display:flex;
+justify-content: center; 
+font-family: sans-serif;
+}
+
+h2{
+    margin-right:150px;
+    display:inline-block;
+    font-family: sans-serif;
+    padding: 10px;
+    margin: 0px;
+}
+aside{
+    margin-right: 200px;
+    padding:0px;
+    background-color:white;
+}
+
+form.City-search-form{
+    display: inline-flow;
+    margin-top:5px;
+    
+}
+div.City-search-form{
+    display: grid;
+    margin: 10px;
+    width: 250px;
+    
+}
+
+h3{
+    margin-block-start:10px;
+    display: inline-flow;
+    background-color:white;
+    
+}
+section{
+    display: incline block;
+    background-color:white;
+}
+
+body {
+    display: inline-block;
+    background-color: lightblue;
+    color: black;
+
+}
+button {
+    display: grid;
+    margin: 10px;
+    margin-right: 100px;
+    color: grey;
+    width: 200px;
+    height: 30px;
+
+}
+.box-weather1{
+color: black;
+width: 100px;
+}
