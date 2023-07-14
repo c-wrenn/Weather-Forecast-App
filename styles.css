@@ -3,65 +3,79 @@
 
 
 h1 {
-margin: 10px 0px 0px 400px;
-color: black;
-display:flex;
-justify-content: center; 
-font-family: sans-serif;
-}
-
-h2{
-    margin-right:150px;
-    display:inline-block;
-    font-family: sans-serif;
-    padding: 10px;
-    margin: 0px;
-}
-aside{
-    margin-right: 200px;
-    padding:0px;
-    background-color:white;
-}
-
-form.City-search-form{
-    display: inline-flow;
-    margin-top:5px;
-    
-}
-div.City-search-form{
-    display: grid;
-    margin: 10px;
-    width: 250px;
-    
-}
-
-h3{
-    margin-block-start:10px;
-    display: inline-flow;
-    background-color:white;
-    
-}
-section{
-    display: incline block;
-    background-color:white;
-}
-
-body {
-    display: inline-block;
-    background-color: lightblue;
+    margin: 10px 0px 0px 400px;
     color: black;
-
-}
-button {
-    display: grid;
-    margin: 10px;
-    margin-right: 100px;
-    color: grey;
-    width: 200px;
-    height: 30px;
-
-}
-.box-weather1{
-color: black;
-width: 100px;
-}
+    display:flex;
+    justify-content: center; 
+    font-family: sans-serif;
+    }
+    
+    h2{
+    
+        display:inline-block;
+        font-family: sans-serif;
+    
+    
+    }
+    aside{
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 10px 20px 10px;
+    }
+    
+    form.City-search-form{
+        display: flex;
+        flex-direction: column;
+        height: 150px;
+        gap: 10px;
+        
+        
+    }
+    
+    
+    h3{
+        margin-block-start:10px;
+        display: inline-flow;
+        background-color:white;
+        padding: 15px;
+        outline: solid grey;
+    }
+    
+    .button-section {
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    body {
+        display: inline-block;
+        background-color: lightblue;
+        color: black;
+    
+    }
+    button {
+        color: grey;
+        width: 200px;
+        height: 30px;
+    
+    }
+    .box-weather1{
+    color: black;
+    width: 1000px;
+    height: 150px;
+    }
+    
+    main {
+        display: flex;
+    }
+    
+    .forecast-container {
+        width: 100%;
+    }
