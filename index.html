@@ -16,11 +16,11 @@
             <aside>
                 <form action="" method="get" class="City-search-form"> 
                     <div class="City-search-form">
-                        <label for="city"> <h2> Search for a City:</h2></></label>
-                        <input type="text" city="city" required>
+                        <label for="city"> <h2> Search for a City:</h2></h2></label>
+                        <input type="text" class="city" value="" required>
                     </div>
                         <div class = "City-search-form">
-                            <input type="submit" value="Search">
+                            <input id="btn" type="submit" value="Search">
                         </div>
                 </form>
 
@@ -39,10 +39,32 @@
             </aside>
 
             <div class="forecast-container">
-                <h3> 5-Day Forecast:
-                <section class="box box-weather1"></section>
+                <h3>
+                <section class="box box-weather1">
+                    <p id="current-city-name"></p>
+                    <p id="current-city-temp"></p>
+                     <p id="current-city-feels_like"></p>
+                    <p id="current-city-humidity"></p>
+                    <p id="current-city-wind"></p>
+                </section>
                 </h3>
-            </div>
+                <h1 id="city-name">City Name:</h1>
+                <h4> 5-Day forecast:
+    
+                <section class="box box-weather2" >
+                    <div class="monday">
+                        <p id="Monday"></p>
+                        <p id="Monday-temp"></p>
+                    
+                    </div>
+                    <div class="tuesday"><p id="Teusday"></p></div>
+                    <div class="wednesday"><p id="Wednesday"></p></div>
+                    <div class="thursday"><p id="Thursday"></p></div>
+                    <div class="friday"><p id="Friday"></p></div>
+                </section> 
+                </h4>
+            
         </main>
+        <script src="./script.js"></script>
     </body>
 </html>

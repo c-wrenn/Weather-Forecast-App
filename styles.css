@@ -1,81 +1,159 @@
-
-
-
-
 h1 {
     margin: 10px 0px 0px 400px;
     color: black;
-    display:flex;
-    justify-content: center; 
+    display: flex;
+    justify-content: center;
     font-family: sans-serif;
-    }
-    
-    h2{
-    
-        display:inline-block;
-        font-family: sans-serif;
-    
-    
-    }
-    aside{
-        display: flex;
-        flex-direction: column;
-        background-color: white;
-        justify-content: space-between;
-        align-items: center;
-        padding: 10px 10px 20px 10px;
-    }
-    
-    form.City-search-form{
-        display: flex;
-        flex-direction: column;
-        height: 150px;
-        gap: 10px;
-        
-        
-    }
-    
-    
-    h3{
-        margin-block-start:10px;
-        display: inline-flow;
-        background-color:white;
-        padding: 15px;
-        outline: solid grey;
-    }
-    
-    .button-section {
-        margin-top: 10px;
-        display: flex;
-        flex-direction: column;
-        
-        gap: 10px;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    body {
-        display: inline-block;
-        background-color: lightblue;
-        color: black;
-    
-    }
-    button {
-        color: grey;
-        width: 200px;
-        height: 30px;
-    
-    }
-    .box-weather1{
+}
+
+h2 {
+
+    display: inline-block;
+    font-family: sans-serif;
+
+
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px 20px 10px;
+}
+
+form.City-search-form {
+    display: flex;
+    flex-direction: column;
+    height: 150px;
+    gap: 10px;
+
+}
+
+input {
+    margin-left: 15px;
+    width: 200px;
+    display: flex;
+    flex: column;
+}
+
+
+h3 {
+    margin-block-start: 10px;
+    display: inline-flow;
+    background-color: white;
+    padding: 15px;
+    outline: solid grey;
+    border-radius: 10px;
+}
+
+h4 {
+    padding: 15px;
+    outline: 8px;
+    border-radius: 10px;
+    outline: solid grey;
+    font-size: 20px;
+    background-color: white;
+
+}
+
+.button-section {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    display: inline-block;
+    background-color: white;
+    color: black;
+
+}
+
+button {
+    color: grey;
+    width: 200px;
+    height: 30px;
+    margin: 10px;
+
+}
+
+.box-weather1 {
     color: black;
     width: 1000px;
     height: 150px;
-    }
+}
+
+.box-weather2 {
+    color: black;
+    background-color: white;
+    width: 100%;
+    height: 200px;
+    padding: 50px;
+    display: flex;
+    flex-direction: row;
     
-    main {
-        display: flex;
-    }
+
+}
+
+main {
+    display: flex;
+
+}
+
+.forecast-container {
+
+    width: 100%;
+    font-family: sans-serif;
     
-    .forecast-container {
-        width: 100%;
-    }
+}
+
+.monday {
+    background-color:#004C99;
+    width: 200px;
+    height: 200px;
+    margin: 15px;
+    padding: 15px;
+    
+}
+
+.tuesday {
+    background-color:#004C99;
+    width: 200px;
+    height: 200px;
+    margin: 15px;
+    padding: 15px;
+}
+
+.wednesday {
+    background-color: #004C99;
+    width: 200px;
+    height: 200px;
+    margin: 15px;
+    padding: 15px;
+}
+
+.thursday {
+    background-color: #004C99;
+    width: 200px;
+    height: 200px;
+    margin: 15px;
+    padding: 15px;
+}
+
+.friday {
+    background-color: #004C99;
+    
+    width: 200px;
+    height: 200px;
+    margin: 15px;
+    padding: 15px;
+}
+p {
+color: white;
+}
