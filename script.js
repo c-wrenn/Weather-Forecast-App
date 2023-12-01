@@ -2,10 +2,18 @@ var inputEl = document.querySelector(".city");
 var btn = document.querySelector("#btn");
 var cityNameEl = document.querySelector("#city-name");
 
+//var city1btn = document.querySelector("")
+//const city1 = "Atlanta";
 
+console.log(cityNameEl.value);
 var apikey = "e34bcd1bd1fa58858404a93981307a77"
 
 function getCurrWeather (cityName) {
+    // make an api call with the city name to get the geolocation
+    // then with the lat and lon
+    // make an api call to the current weather api
+    // all of this code should work
+    // then (we have this) get the five day (skipping ahead to make sure you get a new day instead of ever 3 hours)
     var queryUrl = `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${apikey}`
     console.log(queryUrl)
     fetch(queryUrl)
@@ -27,10 +35,8 @@ function getCurrWeather (cityName) {
         document.getElementById("current-city-wind").textContent = `Wind Speed: ${wind}`;
 
 
-
-       // cityNameEl.textContent = 'City Name: ${humidity}'
-        // cityNameEl.textContent = `City Name: ${data.name}`
-        // cityNameEl.textContent = `City Name: ${data.name}`
+        fiveDayForecast(cityNameEl.value)
+  
     })
 }
 function fiveDayForecast (cityName) {
@@ -48,10 +54,10 @@ console.log(data);
 const name = data.city.name;
 
 const day1Forecast= data.list[0].dt_txt;
-const day2Forecast = data.list[1].dt_txt;
-const day3Forecast = data.list[2].dt_txt;
-const day4Forecast = data.list[3].dt_txt;
-const day5Forecast = data.list[4].dt_txt;
+const day2Forecast = data.list[3].dt_txt;
+const day3Forecast = data.list[6].dt_txt;
+const day4Forecast = data.list[9].dt_txt;
+const day5Forecast = data.list[12].dt_txt;
 
 const day1Temp= data.list[0].main.temp;
 const day2Temp = data.list[1].main.temp;
@@ -64,6 +70,12 @@ const day2Wind = data.list[1].wind.speed;
 const day3Wind = data.list[2].wind.speed;
 const day4Wind = data.list[3].wind.speed;
 const day5Wind = data.list[4].wind.speed;
+
+const day1Humidity= data.list[0].wind.speed;
+const day2Humidity = data.list[1].wind.speed;
+const day3Humidity = data.list[2].wind.speed;
+const day4Humidity = data.list[3].wind.speed;
+const day5Humidity = data.list[4].wind.speed;
 
 document.getElementById("Monday").textContent = `City Name: ${name}`;
 document.getElementById("Monday").textContent = `Monday: ${day1Forecast}`;
@@ -97,10 +109,17 @@ btn.addEventListener("click", function (event) {
     // prevent default prevents the browser from default behaviour of relading/refreshing when this button is clicked
     event.preventDefault()
     console.log(inputEl.value)
-    getCurrWeather(inputEl.value)
-    fiveDayForecast(inputEl.value)
+    getCurrWeather(cityNameEl.value)
+    //fiveDayForecast(inputEl.value)
 
 
 })
+
+//Atlanta.addEventListener("click", function(event) {
+  //  event.preventDefault()
+   // console.log(city1.value)
+   // getCurrWeather(city1.value)
+    //fiveDayForecast(city1.value)
+//})
 // getCurrWeather(inputEl.value)
 
